@@ -3,7 +3,7 @@ USER root
 # Copy entitlements
 COPY ./etc-pki-entitlement /etc/pki/entitlement
 # Copy subscription manager configurations
-RUN pwd \
+RUN pwd && \
     ls
 #COPY ./rhsm-conf /etc/rhsm
 #COPY ./rhsm-ca /etc/rhsm/ca
