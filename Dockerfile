@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhel7:latest
+FROM registry.redhat.io/ubi8/ubi:latest
 USER root
 # Copy entitlements
 COPY ./etc-pki-entitlement /etc/pki/entitlement
