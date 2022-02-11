@@ -8,7 +8,7 @@ COPY ./etc-pki-entitlement /etc/pki/entitlement
 # Delete /etc/rhsm-host to use entitlements from the build container
 RUN rm /etc/rhsm-host
 RUN yum repolist --disablerepo=*
-RUN subscription-manager repos --enable <enabled-repo>
+#RUN subscription-manager repos --enable <enabled-repo>
 RUN yum -y update
 RUN yum -y install flex 
 RUN rm -rf /etc/pki/entitlement 
