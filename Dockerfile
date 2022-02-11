@@ -1,7 +1,7 @@
 FROM registry.redhat.io/ubi8:latest
 USER root
-RUN ls -ltr /etc/pki/entitlements/
-RUN md5sum /etc/pki/entitlements/*
+RUN ls -ltr /etc/pki/entitlement/
+RUN md5sum /etc/pki/entitlement/*
 RUN yum repolist --disablerepo=* && \
     yum -y update && \
     yum -y install flex 
